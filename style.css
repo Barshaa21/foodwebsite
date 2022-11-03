@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Itim&family=Mali:wght@200;300&family=Roboto:ital,wght@0,300;1,100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+.html{
+    scroll-behavior: smooth;
+}
+
+.navBar {
+    display: flex;
+    color: white;
+    height: 50px;
+    position: sticky;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+}
+
+.list {
+    display: flex;
+    list-style: none;
+    color: white;
+    width: 70%;
+    align-items: center;
+}
+
+.logo {
+    justify-content: center;
+    width: 10%;
+}
+
+.logo img {
+    border: 3px solid white;
+    border-radius: 20px;
+    width: 60%;
+}
+
+.list li {
+    color: white;
+    padding: 25px;
+}
+
+.list li a {
+    color: white;
+}
+
+.list li a:hover {
+    color: wheat;
+
+}
+
+.rightnav {
+    display: flex;
+    height: 30px;
+    justify-content: right;
+    width: 50%;
+}
+
+.btnsm {
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+
+#search {
+    border-radius: 5px;
+}
+
+.background {
+    background: rgba(0, 0, 0, 0.7) url('../bg-img.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.secondHalf {
+    padding: 20px 20px;
+}
+
+.secondHalf img {
+    height: 400px;
+    border-radius: 10px;
+    border: 4px solid white;
+}
+
+.firstHalf {
+    color: white;
+    font-weight: bolder;
+
+}
+
+.firstSection {
+    height: 200vh;
+}
+
+.box-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    padding-left: 10px;
+}
+
+.btn {
+    cursor: pointer;
+    background: none;
+    /* makes btn trasparent */
+    color: white;
+    border: 3px solid white;
+    font-weight: bolder;
+    border-radius: 5px;
+    padding: 10px 10px;
+    margin: 7px, 3px;
+}
+
+.textBig {
+    font-weight: bolder;
+    font-size: 40px;
+
+}
+
+.textSmall {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Fasthand', cursive;
+    font-family: 'Itim', cursive;
+    font-family: 'Mali', cursive;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.section {
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: center;
+    margin: auto;
+    height: 300px;
+}
+
+.bgfirstSection {
+    padding-bottom: 300px;
+
+}
+
+.secLeft {
+    flex-direction: row-reverse;
+
+}
+
+.sectionTag {
+    color: white;
+}
+
+.contact {
+    color: white;
+    height: 300px;
+    padding-left: 500px;
+
+}
+
+.form {
+    max-width: 400px;
+    padding: 30px 0px;
+    align-items: center;
+    align-content: center;
+
+}
+
+.form input {
+    border-radius: 7px;
+    padding: 20px 60px
+}
+
+.one {
+    padding-left: 10px;
+}
+
+.footer {
+
+    color: white;
+    font-weight: bolder;
+    font-size: larger;
+    background-color: Dark grey;
+    padding-top: 45px;
+
+}
+
+.textFooter {
+    padding-bottom: 30px;
+    justify-content: center;
+    text-align: center;
+}
+
+.toopen {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+    display: none;
+}
+
+.line {
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .list {
+        flex-direction: column;
+        padding-top: 250px;
+    }
+
+    .navBar {
+        flex-direction: column;
+        height: 447px;
+        transition: all 0.3s ease-out;
+    }
+
+    .toopen {
+        display: block;
+    }
+
+    .h-nav-resp {
+        height: 72px;
+    }
+
+    .v-class-resp {
+        opacity: 0; 
+        /* not 0 px */
+        padding-top :280px;
+        
+    }
+
+    .box-main {
+        padding-top: 300px;
+    }
+}
